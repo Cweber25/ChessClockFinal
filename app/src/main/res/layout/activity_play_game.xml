@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScoreTxt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    tools:context=".playGame">
+
+    <Button
+        android:id="@+id/draw"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="268dp"
+        android:rotation="90"
+        android:text="Draw"
+        android:textSize="12sp"
+        android:translationZ="-5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/countdown_button" />
+
+    <Button
+        android:id="@+id/whiteWin"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="268dp"
+        android:rotation="90"
+        android:text="White Win"
+        android:textSize="12sp"
+        android:translationZ="-5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/countdown_button" />
+
+    <TextView
+
+        android:id="@+id/countdown_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73"
+        tools:text="10:00"
+
+        />
+
+    <Button
+        android:id="@+id/countdown_button"
+        android:layout_width="420dp"
+        android:layout_height="270dp"
+        android:layout_below="@+id/countdown_text"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/white"
+        android:rotation="-180"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="75sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+
+        android:id="@+id/countdown_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:rotation="-180"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199"
+        tools:text="10:00"
+
+        />
+
+
+    <Button
+        android:id="@+id/countdown_button2"
+        android:layout_width="427dp"
+        android:layout_height="285dp"
+        android:layout_below="@+id/countdown_text"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/black"
+        android:text=""
+        android:textSize="75sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="116dp"
+        android:gravity="center_horizontal|top"
+        android:rotation="90"
+        android:text="Score"
+        android:textSize="20sp"
+        android:translationZ="5dp"
+        app:layout_constraintStart_toStartOf="@+id/countdown_button"
+        app:layout_constraintTop_toTopOf="@+id/countdown_button" />
+
+    <TextView
+        android:id="@+id/scoreWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="116dp"
+        android:gravity="center_horizontal|top"
+        android:rotation="90"
+        android:text="0"
+        android:textSize="20sp"
+        android:translationZ="5dp"
+        app:layout_constraintStart_toStartOf="@+id/countdown_button"
+        app:layout_constraintTop_toTopOf="@+id/countdown_button" />
+
+    <TextView
+        android:id="@+id/Idk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="444dp"
+        android:gravity="center_horizontal|top"
+        android:rotation="90"
+        android:text="Score"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:translationZ="5dp"
+        app:layout_constraintStart_toStartOf="@+id/countdown_button"
+        app:layout_constraintTop_toTopOf="@+id/countdown_button" />
+
+    <TextView
+        android:id="@+id/scoreBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="444dp"
+        android:gravity="center_horizontal|top"
+        android:rotation="90"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:translationZ="5dp"
+        app:layout_constraintStart_toStartOf="@+id/countdown_button"
+        app:layout_constraintTop_toTopOf="@+id/countdown_button" />
+
+    <Button
+        android:id="@+id/blackWin"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="268dp"
+        android:rotation="90"
+        android:text="black Win"
+        android:textSize="12sp"
+        android:translationZ="-5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/countdown_button" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="55dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="281dp"
+        android:layout_marginTop="270dp"
+        android:onClick="returnToHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="51dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="352dp"
+        android:layout_marginTop="236dp"
+        android:onClick="reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/countdown_button"
+        app:srcCompat="@drawable/reset"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="55dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="259dp"
+        android:onClick="swapScores"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/countdown_button"
+        app:srcCompat="@drawable/swap2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
