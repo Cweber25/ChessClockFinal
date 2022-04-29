@@ -37,8 +37,6 @@ public class playGame extends AppCompatActivity {
     private Long inc;
     private String u_value;
     private String increment;
-    private boolean clicked = false;
-    private boolean clicked2 = false;
 
 
 
@@ -68,7 +66,6 @@ public class playGame extends AppCompatActivity {
         countdownButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                clicked = true;
                 startStop();
             }
         });
@@ -79,7 +76,6 @@ public class playGame extends AppCompatActivity {
                 if (timerRunning) {
 
                 } else {
-                    clicked = true;
                     startTimer();
                     stopTimer2();
                 }
@@ -172,7 +168,7 @@ public class playGame extends AppCompatActivity {
         countDownTimer.cancel();
         //countdownButton.setText("Start");
         timerRunning = false;
-        timeLeftInMillieseconds += inc;
+        //timeLeftInMillieseconds += inc;
         startTimer2();
 
     }
@@ -203,7 +199,7 @@ public class playGame extends AppCompatActivity {
     public void stopTimer2() {
         countDownTimer2.cancel();
         timer2Running = false;
-        timeLeftInMillieseconds2 += inc;
+        //timeLeftInMillieseconds2 += inc;
         //countdownButton.setText("Start");
 
     }
